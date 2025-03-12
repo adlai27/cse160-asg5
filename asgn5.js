@@ -372,7 +372,7 @@ function main() {
 
         const labelPos = root.position.clone();
         labelPos.y += 15;
-        createBillboard("Hidden Treasure", labelPos);
+        createBillboard("Treasure", labelPos);
       });
     });
   }
