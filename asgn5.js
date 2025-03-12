@@ -13,7 +13,7 @@ function main() {
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
   const scene = new THREE.Scene();
-  scene.fog = new THREE.Fog(0xaadfff, 90, 400);
+  scene.fog = new THREE.Fog(0xaadfff, 90, 450);
 
   // SKYBOX
   {
@@ -231,9 +231,9 @@ function main() {
   scene.add(bubblesGroup);
 
   {
-    const bubbleCount = 30;
+    const bubbleCount = 40;
     for (let i = 0; i < bubbleCount; i++) {
-      const bubbleGeo = new THREE.SphereGeometry(2.5, 12, 12);
+      const bubbleGeo = new THREE.SphereGeometry(3, 12, 12);
       const bubbleMat = new THREE.MeshStandardMaterial({
         color: 0x88ccff,
         emissive: 0x226699,
