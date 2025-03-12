@@ -13,7 +13,7 @@ function main() {
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
   const scene = new THREE.Scene();
-  scene.fog = new THREE.Fog(0xaadfff, 90, 500);
+  scene.fog = new THREE.Fog(0xaadfff, 90, 400);
 
   // SKYBOX
   {
